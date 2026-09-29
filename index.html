@@ -4,89 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="newStyleClass.css">
+    <link rel="stylesheet" href="styleClass.css">
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
     <header>
         <nav>
             <ul class="ulNav">
-                <h1><li><a href = "index.html" class="navBorderStyle">Веб - технологии</a> </a></h1>
-                <h1><li><a href = "index.html" class="navBorderStyle">Университет "Дубна"</a> </a></h3>
-                <h1><li><a href = "index.html" class="navBorderStyle">Что-то третье"</a> </a></h3>
+                <li class="navItem">
+                    <img src="Images/numPadding.png" height="25" width="10">
+                    <a href="index.html" class="resetURLStyle">О себе</a>
+                </li>
+                <li class="navItem">
+                    <img src="Images/numPadding.png" height="25" width="10">
+                    <a href="index.html" class="resetURLStyle">Резюме</a>
+                </li>
+                <li class="navItem">
+                    <img src="Images/numPadding.png" height="25" width="10">
+                    <a href="index.html" class="resetURLStyle">Портфолио</a>
+                </li>
+                <li class="navItem">
+                    <img src="Images/numPadding.png" height="25" width="10">
+                    <a href="index.html" class="resetURLStyle">Компетенции</a>
+                </li>
+                <li class="navItem">
+                    <img src="Images/numPadding.png" height="25" width="10">
+                    <a href="index.html" class="resetURLStyle">Контакты</a>
+                </li>
             </ul>
-        </nav>
-    </header><br>
+        </nav><br><br>
+        <div>
+            <img src="Images/backgroundHeader.png" height="37%" width="100%">
+        </div><br>
+    </header><br><br><br><br><br>
 
-    <div class="centeredForm">
-        <form class="wholeBorderStyle centeredForm">
-            <div class="flexSetCentre">
-                <div class="flexSetLeft"><br><br>
-                    Как вам удобно получить ответ:<br>
-                    <div>
-                        <input type="radio" id="emailMes" name="gettingMessages" value="email">
-                        <label for="emailMes">По почте</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="phoneMes" name="gettingMessages" value="phone">
-                        <label for="phoneMes">По телефону</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="notanyMes" name="gettingMessages" value="nothing">
-                        <label for="notanyMes">Не нужно отвечать</label>
-                    </div>
-                </div><br>
-                <div>
-                    Укажите тему вопроса<br>
-                    <select class="pickThingStyle"  class="flexSetLeft">
-                        <option>Работа</option>
-                        <option>Учеба</option>
-                        <option>Прочее</option>
-                    </select>
-                </div><br>
-                <div  class="flexSetLeft">
-                    И еще один вопрос?<br>
-                    <div>
-                        <input type="checkbox" id="anotherQ1" name="answerQ" value="firstQ">
-                        <label for="anotherQ1">может так</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="anotherQ2" name="answerQ" value="secondQ">
-                        <label for="anotherQ2">или не так</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="anotherQ3" name="answerQ" value="thirdQ">
-                        <label for="anotherQ3">иначе</label>
-                    </div>                           
-                </div><br>
-                <div class="flexInputText">
-                    <div>
-                        <label for="userName">Ваше имя:</label>
-                        <input type="text" name="userName" class="inputFieldStyle">
-                    </div><br>
-                    <div>
-                        <label for="userEmail">Адрес почты:</label>
-                        <input type="email" name="userEmail" class="inputFieldStyle">
-                    </div><br>
-                    <div>
-                        <label for="userPhone">Номер телефона:</label>
-                        <input type="text" name="userPhone" class="inputFieldStyle">
-                    </div><br>
-                    <!-- <div>
-                        <label for="userQuestion">Ваш вопрос:</label><br>
-                        <textarea name="userQuestion" cols="30" rows="3"></textarea>
-                    </div> -->
-                </div>
-                <div class="flexSetCentre">
-                    <input type="submit" value="Отправить вопрос" class="inputFieldStyle">
-                </div><br>
+    <div class="paddingLeft">
+        <div class="closePictureFlex">
+            <div>
+                <li><h1>Заголовок</h1></li><br>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, modi! Expedita unde iste quod molestiae magnam ipsa qui alias assumenda? Molestiae, sequi quas dolorum quis consectetur vero deleniti voluptates dolore.</li>
             </div>
-        </form>
+            <img src ="Images/F.png" width="1000" height="250">
+        </div>
     </div><br>
+
+    <div class = "blackBackgroundColor"><br><br><br>
+        <li class="centreFlex textColorWhite"><h1>Мои компетенции</h1></li>
+        <br><br><br><br>
+    </div>
+
     <footer>
         <div>
-            <img src="Images/Fish.png" height="75" width="90"><br>
-            Сайт разработан OL, Copyright @ 2026
         </div>
     </footer>
 </body>

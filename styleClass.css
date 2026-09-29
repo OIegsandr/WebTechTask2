@@ -1,0 +1,84 @@
+header{
+    background-color: orange;
+}
+
+footer{
+    background-color: orange;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;    
+}
+
+.wholeBorderStyle{
+    border-style: solid;
+    border-color: orange;
+    border-radius: 100px;
+    box-shadow: 0px 0px 4px 2px orange;
+    width: 350px;
+}
+
+.inputFieldStyle{
+    border-style: solid;
+    border-color: rgb(136, 46, 11) orange orange rgb(136, 46, 11);
+    background-color: lightyellow;
+    border-radius: 20px;
+    border-width: 3px;
+    height: 30px;
+}
+
+.pickThingStyle{
+    border-style: solid;
+    border-color: orange;
+    background-color: lightyellow;
+    border-radius: 20px;
+    border-width: 2px;
+    width: 150px;
+    height: 30px;
+}
+
+.flexInputText{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flexSetCentre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flexSetLeft{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.centeredForm {
+    display: flex;
+    justify-content: center;
+}
+
+.navBorderStyle{
+    border-style: solid;
+    border-color: darkorange;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.ulNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    flex-direction: row ;
+
+    list-style: none;
+}

@@ -6,7 +6,6 @@ header{
 
 footer{
     background-color: white;
-    position: absolute;
     width: 100%;
     bottom: 0px;    
 }
@@ -61,6 +60,37 @@ footer{
 
 .textColorWhite{
     color:white;
+}
+
+.linedFlex{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.listStyleCircle{
+    list-style-type: circle;
+}
+
+.listStyleNone{
+    list-style: none;
+}
+
+.centeredText{
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.photosFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logosFlex{
+    display: flex;
+    gap: 5px;
 }
 
 li {

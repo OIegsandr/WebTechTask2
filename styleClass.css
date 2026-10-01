@@ -64,8 +64,11 @@ footer{
 
 .linedFlex{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
+    align-content: center;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .listStyleCircle{
@@ -93,6 +96,70 @@ footer{
     gap: 5px;
 }
 
+.flexSetCentre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    list-style-type: none;
+    margin: 10px;
+}
+
+.flexSetLeft{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.pickThingStyle{
+    border-style: solid;
+    border-color: #0b0817;
+    background-color: white;
+    border-radius: 20px;
+    border-width: 4px;
+    width: 150px;
+    height: 30px;
+}
+
+.inputFieldStyle{
+    border-style: solid;
+    border-color: #0b0817 #2e2b46 #2e2b46 #0b0817;
+    background-color: white;
+    border-radius: 20px;
+    border-width: 3px;
+    height: 25px;
+    width: 140px;
+}
+
+.inputFieldFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.flexInputText{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.wholeBorderStyle{
+    border-style: solid;
+    border-color: #0b0817;
+    border-radius: 100px;
+    box-shadow: 0px 0px 4px 2px #0b0817;
+    width: 400px;
+    border-width: 8px;
+    background-color: #2e2b46;
+    color: white;
+}
+
 li {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+

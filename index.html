@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styleClass.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="script.js"></script>   
 </head>
 <body>
     <header>
@@ -102,8 +103,23 @@
         <li class="centreFlex textColorWhite"><h1>Заголовок</h1></li><br><br><br>
         <li class="textColorWhite centeredText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, modi! Expedita unde iste quod molestiae magnam ipsa qui alias assumenda? Molestiae, sequi quas dolorum quis consectetur vero deleniti voluptates dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, modi! Expedita unde iste quod molestiae magnam ipsa qui alias assumenda? Molestiae, sequi quas dolorum quis consectetur vero deleniti voluptates dolore.</li><br><br>
         <div class="centreFlex">
-            <input type="submit" value="Подробнее">
+            <input id = "elemYellowButton" type="button" value="Сделать жёлтым" onclick="changeColor('yellow')">
+            <input id = "elemGreenButton" type="button" value="Сделать зелёным" onclick="changeColor('green')">
+            <input id = "elemRedButton" type="button" value="Сделать красным" onclick="changeColor('red')">      
+            <input id = "elemWhiteButton" type="button" value="Сделать белым" onclick="changeColor('white')">      
         </div><br><br>
+    </div>
+
+
+    <div class="inputFieldFlex listStyleNone">
+        <div>
+            <li><label for="userName">Имя пользователя:</label></li> 
+            <input type="text" name="userName" class="inputFieldStyle">
+        </div>
+        <div>
+            <li><label for="userName">Текст сообщения:</label></li> 
+            <input type="text" name="userText" class="inputFieldStyle">
+        </div>
     </div>
 
     <footer><br><br>

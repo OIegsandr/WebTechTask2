@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="styleClass.css">
     <link rel="stylesheet" href="reset.css">
     <script src="script.js"></script>   
@@ -35,6 +35,10 @@
                 <li class="navItem">
                     <img src="Images/numPadding.png" height="25" width="10">
                     <a href="authPage.html" class="resetURLStyle">Регистрация</a>
+                </li>
+                <li class="navItem">
+                    <img src="Images/numPadding.png" height="25" width="10">
+                    <a href="news.html" class="resetURLStyle">Новости</a>
                 </li>
             </ul>
         </nav><br><br>
@@ -114,11 +118,18 @@
     <div class="inputFieldFlex listStyleNone">
         <div>
             <li><label for="userName">Имя пользователя:</label></li> 
-            <input type="text" name="userName" class="inputFieldStyle">
+            <input type="text" id="userName" name="userName" class="inputFieldStyle">
         </div>
         <div>
-            <li><label for="userName">Текст сообщения:</label></li> 
-            <input type="text" name="userText" class="inputFieldStyle">
+            <li><label for="userText">Текст сообщения:</label></li> 
+            <input type="text" id="userText" name="userText" class="inputFieldStyle">
+        </div>
+        <div>
+            <li><label for="userImage">Изображение:</label></li> 
+            <input type="file" id="userImage" name="userImage" accept="image/*">
+        </div>
+        <div>
+            <input type="button" value="Отправить" class="inputFieldStyle" onclick="showMessage()">
         </div>
     </div>
 

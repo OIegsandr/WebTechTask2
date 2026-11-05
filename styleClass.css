@@ -163,3 +163,41 @@ li {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
+.textAreaStyle{
+    border-style: solid;
+    border-color: #0b0817 #2e2b46 #2e2b46 #0b0817;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    border-width: 3px;
+    padding: 5px 10px;
+    resize: vertical;
+}
+
+.resultStyle{
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.newsCardStyle{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    width: 500px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #0b0817;
+    border-width: 8px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 4px 2px #0b0817;
+}
+
+.newsSmallText{
+    font-size: small;
+    color: #2e2b46;
+}

@@ -62,3 +62,9 @@ function createNews() {
 
     card.style.display = 'flex';
 }
+
+function changeTheme() {
+    const isDarkTheme = document.body.classList.toggle('dark'); 
+    localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+}
+

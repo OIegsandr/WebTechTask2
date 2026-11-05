@@ -1,11 +1,40 @@
+:root{
+    --bgPage: white;
+    --bgHeader: #160f30;
+    --bgFooter: #160f30;
+    --bgCard:   #19143a;
+    --bgButton: #0b0817;
+    --textColor: black;
+    --textInverseColor: white;
+
+    --textNewsSmallText: #2e2b46;
+}
+
+body{
+    background-color: var(--bgPage);
+    color: var(--textColor);
+}
+
+body.dark{
+    --bgPage: #0c081a;
+    --bgHeader: #080511;
+    --bgFooter: #0b0817;
+    --bgCard: #14112b;
+    --bgButton: #0b0817;
+    --textColor: white;
+    --textInverseColor: white;
+    --textNewsSmallText: #14112b;
+}
+
 header{
-    background-color: #0b0817;
+    background-color: var(--bgHeader);
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 footer{
-    background-color: white;
+    background-color: var(--bgFooter);
+    color: var(--textInverseColor);
     width: 100%;
     bottom: 0px;    
 }
@@ -28,7 +57,6 @@ footer{
 }
 
 .resetURLStyle{
-    color: white;
     text-decoration: none;
     border: none;
     font-size: medium;
@@ -55,11 +83,7 @@ footer{
 }
 
 .blackBackgroundColor{
-    background-color: #0b0817;
-}
-
-.textColorWhite{
-    color:white;
+    background-color: var(--bgCard);
 }
 
 .linedFlex{
@@ -115,8 +139,7 @@ footer{
 
 .pickThingStyle{
     border-style: solid;
-    border-color: #0b0817;
-    background-color: white;
+    border-color: var(--bgHeader);
     border-radius: 20px;
     border-width: 4px;
     width: 150px;
@@ -125,8 +148,7 @@ footer{
 
 .inputFieldStyle{
     border-style: solid;
-    border-color: #0b0817 #2e2b46 #2e2b46 #0b0817;
-    background-color: white;
+    border-color: var(--bgHeader) var(--bgCard) var(--bgCard) var(--bgHeader);
     border-radius: 20px;
     border-width: 3px;
     height: 25px;
@@ -150,13 +172,12 @@ footer{
 
 .wholeBorderStyle{
     border-style: solid;
-    border-color: #0b0817;
+    border-color: var(--bgHeader);
     border-radius: 100px;
-    box-shadow: 0px 0px 4px 2px #0b0817;
+    box-shadow: 0px 0px 4px 2px var(--bgHeader);
     width: 400px;
     border-width: 8px;
-    background-color: #2e2b46;
-    color: white;
+    background-color: var(--bgCard);
 }
 
 li {
@@ -165,9 +186,7 @@ li {
 
 .textAreaStyle{
     border-style: solid;
-    border-color: #0b0817 #2e2b46 #2e2b46 #0b0817;
-    background-color: white;
-    color: black;
+    border-color: var(--bgHeader) var(--bgCard) var(--bgCard) var(--bgHeader);
     border-radius: 15px;
     border-width: 3px;
     padding: 5px 10px;
@@ -191,13 +210,17 @@ li {
     width: 500px;
     padding: 30px;
     border-style: solid;
-    border-color: #0b0817;
+    border-color: var(--bgHeader);
     border-width: 8px;
     border-radius: 40px;
-    box-shadow: 0px 0px 4px 2px #0b0817;
+    box-shadow: 0px 0px 4px 2px var(--bgHeader);
+}
+
+.textColorWhite{
+    color: var(--textInverseColor);
 }
 
 .newsSmallText{
     font-size: small;
-    color: #2e2b46;
+    color: var(--textNewsSmallText);
 }

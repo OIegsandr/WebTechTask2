@@ -14,31 +14,34 @@
             <ul class="ulNav">
                 <li class="navItem">
                     <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle">О себе</a>
+                    <a href="index.html" class="resetURLStyle textColorWhite">О себе</a>
                 </li>
                 <li class="navItem">
                     <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle">Резюме</a>
+                    <a href="index.html" class="resetURLStyle textColorWhite">Резюме</a>
                 </li>
                 <li class="navItem">
                     <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle">Портфолио</a>
+                    <a href="index.html" class="resetURLStyle textColorWhite">Портфолио</a>
                 </li>
                 <li class="navItem">
                     <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle">Компетенции</a>
+                    <a href="index.html" class="resetURLStyle textColorWhite">Компетенции</a>
                 </li>
                 <li class="navItem">
                     <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle">Контакты</a>
+                    <a href="index.html" class="resetURLStyle textColorWhite">Контакты</a>
                 </li>
                 <li class="navItem">
                     <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="authPage.html" class="resetURLStyle">Регистрация</a>
+                    <a href="authPage.html" class="resetURLStyle textColorWhite">Регистрация</a>
                 </li>
                 <li class="navItem">
                     <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="news.html" class="resetURLStyle">Новости</a>
+                    <a href="news.html" class="resetURLStyle textColorWhite">Новости</a>
+                </li>
+                <li class="navItem">
+                    <input type="button" value="Сменить тему"  onclick="changeTheme()">
                 </li>
             </ul>
         </nav><br><br>
@@ -112,25 +115,6 @@
             <input id = "elemRedButton" type="button" value="Сделать красным" onclick="changeColor('red')">      
             <input id = "elemWhiteButton" type="button" value="Сделать белым" onclick="changeColor('white')">      
         </div><br><br>
-    </div>
-
-
-    <div class="inputFieldFlex listStyleNone">
-        <div>
-            <li><label for="userName">Имя пользователя:</label></li> 
-            <input type="text" id="userName" name="userName" class="inputFieldStyle">
-        </div>
-        <div>
-            <li><label for="userText">Текст сообщения:</label></li> 
-            <input type="text" id="userText" name="userText" class="inputFieldStyle">
-        </div>
-        <div>
-            <li><label for="userImage">Изображение:</label></li> 
-            <input type="file" id="userImage" name="userImage" accept="image/*">
-        </div>
-        <div>
-            <input type="button" value="Отправить" class="inputFieldStyle" onclick="showMessage()">
-        </div>
     </div>
 
     <footer><br><br>

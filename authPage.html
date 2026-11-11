@@ -120,10 +120,17 @@
                     </div>
                 </div><br>
                 <div>
-                    <li><label for="userQuestion">Ваш вопрос:</label></li>
-                    <textarea id="userQuestion" name="userQuestion" cols="30" rows="3" class="textAreaStyle textColorBlack backgroundWhite"></textarea>
+                    <div id="askQuestion" class="flexSetCentre">
+                        <li>
+                            <input type="button" id="askQuestionButton" value="Задать вопрос" class="inputFieldStyle backgroundWhite" style="height: 30px; width: 200px;" onclick="document.getElementById('questionField').style.display = 'block'; document.getElementById('sendQuestion').style.display = 'flex'; document.getElementById('askQuestion').style.display = 'none';">
+                        </li>
+                    </div>
+                    <div id="questionField" style="display: none;">
+                        <li><label for="userQuestion">Ваш вопрос:</label></li>
+                        <textarea id="userQuestion" name="userQuestion" cols="30" rows="3" class="textAreaStyle textColorBlack backgroundWhite"></textarea>
+                    </div>
                 </div><br>
-                <div class="flexSetCentre">
+                <div id="sendQuestion" class="flexSetCentre" style="display: none;">
                     <li>
                         <input type="submit" value="Отправить вопрос" class="inputFieldStyle backgroundWhite" style="height: 30px; width: 200px;">
                     </li>

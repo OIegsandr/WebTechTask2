@@ -90,7 +90,7 @@ function setCookie(name, value, options = {}) {
     options = {
         path: '/',
         ...options
-};
+    };
     if (options.expires instanceof Date) {
         options.expires = options.expires.toUTCString();
     }
@@ -109,4 +109,26 @@ function deleteCookie(name) {
         'max-age': -1
     });
 }
+
+//LocalStorage
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('userForm');
+
+    form.addEventListener('focusout', function(event) {
+        const field = event.target;
+        field.classList.add('inputFocused');
+        if (field.id){
+            localStorage.setItem(field.id, field.value);
+        }
+    }); 
+
+    const restoreIDs = ['userLogin', 'userPassword', 'userEmail'];
+    restoreIDs.forEach(function(id) {
+        const textarea = document.getElementById(id);
+        const savedValue = localStorage.getItem(id);
+        if (textarea && savedValue !== null) {
+            textarea.value = savedValue;
+        }
+    });
+});
 

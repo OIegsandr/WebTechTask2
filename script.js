@@ -1,3 +1,5 @@
+let textareaCount = 0;
+
 function changeColor(color) {
     document.body.style.backgroundColor = color;
 }
@@ -35,8 +37,25 @@ function checkData(event) {
     document.getElementById('resultEmail').textContent = 'Почта - ' + email.value;
     document.getElementById('resultCity').textContent = 'Город - ' + city.options[city.selectedIndex].text;
     document.getElementById('resultSubscribe').textContent = subscribe.checked ? 'Вы подписаны на рассылку' : 'Вы не подписаны на рассылку';
-
     document.getElementById('resultBlock').style.display = 'flex';
+}
+
+function createTextArea(){
+    const numberInput = document.getElementById('createNumber');
+
+    textareaCount = Number(numberInput.value);
+    if (!Number.isInteger(textareaCount) || textareaCount <= 0) {
+        textareaCount = 0;
+        numberInput.value = '0';
+    }
+    container.innerHTML = '';
+
+    for (let i = 0; i < textareaCount; i++) {
+        const textarea = document.createElement('textarea');
+        textarea.className = 'inputFieldStyle backgroundWhite';
+        textarea.id = 'textarea-${i}';
+        container.appendChild(textarea);     
+    }
 }
 
 function createNews() {
@@ -59,7 +78,6 @@ function createNews() {
     } else {
         picture.style.display = 'none';
     }
-
     card.style.display = 'flex';
 }
 
@@ -106,17 +124,16 @@ function setCookie(name, value, options = {}) {
 }
 function deleteCookie(name) {
     setCookie(name, "", {
-        'max-age': -1
+        'max-age': -1   
     });
 }
 
 //LocalStorage
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('userForm');
+    const form = document.getElementById("textarea-${textareaCount}");
 
     form.addEventListener('focusout', function(event) {
         const field = event.target;
-        field.classList.add('inputFocused');
         if (field.id){
             localStorage.setItem(field.id, field.value);
         }

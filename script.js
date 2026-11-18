@@ -42,19 +42,42 @@ function checkData(event) {
 
 function createTextArea(){
     const numberInput = document.getElementById('createNumber');
+    const container = document.getElementById('container');
 
     textareaCount = Number(numberInput.value);
     if (!Number.isInteger(textareaCount) || textareaCount <= 0) {
         textareaCount = 0;
-        numberInput.value = '0';
+        numberInput.value = '';
     }
     container.innerHTML = '';
 
     for (let i = 0; i < textareaCount; i++) {
+        const block = document.createElement('div');
+        block.className = 'textBlock';
+
         const textarea = document.createElement('textarea');
-        textarea.className = 'inputFieldStyle backgroundWhite';
-        textarea.id = 'textarea-${i}';
-        container.appendChild(textarea);     
+        textarea.id = `textarea-${i}`;
+        textarea.className = 'textAreaStyle textColorBlack backgroundWhite';
+        textarea.rows = 3;
+
+        const label = document.createElement('label');
+        label.htmlFor = textarea.id;
+        label.textContent = `Блок ${i + 1}:`;
+
+        // Подгружаем сохранённый текст этого блока
+        const savedValue = localStorage.getItem(textarea.id);
+        if (savedValue !== null) {
+            textarea.value = savedValue;
+        }
+
+        // Сохраняем текст при каждом изменении
+        textarea.addEventListener('input', function() {
+            localStorage.setItem(textarea.id, textarea.value);
+        });
+
+        block.appendChild(label);
+        block.appendChild(textarea);
+        container.appendChild(block);
     }
 }
 
@@ -130,14 +153,15 @@ function deleteCookie(name) {
 
 //LocalStorage
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById("textarea-${textareaCount}");
+    const form = document.getElementById('userForm');
+    if (!form) return; // формы нет на index.html и news.html
 
     form.addEventListener('focusout', function(event) {
         const field = event.target;
-        if (field.id){
+        if (field.id && field.type !== 'button' && field.type !== 'submit'){
             localStorage.setItem(field.id, field.value);
         }
-    }); 
+    });
 
     const restoreIDs = ['userLogin', 'userPassword', 'userEmail'];
     restoreIDs.forEach(function(id) {

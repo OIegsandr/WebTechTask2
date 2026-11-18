@@ -224,3 +224,9 @@ li {
     font-size: small;
     color: var(--textNewsSmallText);
 }
+
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}

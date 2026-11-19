@@ -9,27 +9,9 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="ulNav">
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle textColorWhite">Веб - технологии</a>
-                </li>
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle textColorWhite">Университет "Дубна"</a>
-                </li>
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="news.html" class="resetURLStyle textColorWhite">Новости</a>
-                </li>
-                <li class="navItem">
-                    <input type="button" value="Сменить тему" onclick="changeTheme()">
-                </li>
-            </ul>
-        </nav>
-    </header><br>
+    <?php
+    require('headerTemplate.html');
+    ?><br>
 
     <div class="centreFlex">
         <form class="wholeBorderStyle textColorWhite centreFlex" id="userForm" onsubmit="checkData(event)">
@@ -155,13 +137,8 @@
         </div>
     </div><br>
 
-    <footer class="backgroundWhite"><br><br>
-        <div class="photosFlex">
-            <div class="logosFlex">
-                <img src="Images/logo3.png" width="100" height="100">
-            </div>
-            <li class="listStyleNone textFlex">Сайт разработан OL, Copyright @ 2026</li>
-        </div>
-    </footer>
+    <?php
+    require('footerTemplate.html')
+    ?>
 </body>
 </html>

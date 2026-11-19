@@ -9,46 +9,9 @@
     <script src="script.js"></script>   
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="ulNav">
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle textColorWhite">О себе</a>
-                </li>
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle textColorWhite">Резюме</a>
-                </li>
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle textColorWhite">Портфолио</a>
-                </li>
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle textColorWhite">Компетенции</a>
-                </li>
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="index.html" class="resetURLStyle textColorWhite">Контакты</a>
-                </li>
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="authPage.html" class="resetURLStyle textColorWhite">Регистрация</a>
-                </li>
-                <li class="navItem">
-                    <img src="Images/numPadding.png" height="25" width="10">
-                    <a href="news.html" class="resetURLStyle textColorWhite">Новости</a>
-                </li>
-                <li class="navItem">
-                    <input type="button" value="Сменить тему"  onclick="changeTheme()">
-                </li>
-            </ul>
-        </nav><br><br>
-        <div>
-            <img src="Images/backgroundHeader.png" height="37%" width="100%">
-        </div><br>
-    </header><br><br><br><br><br>
+    <?php
+    require('headerTemplate.html');
+    ?><br><br><br><br><br>
 
     <div class="paddingLeft">
         <div class="closePictureFlex">
@@ -117,15 +80,8 @@
         </div><br><br>
     </div>
 
-    <footer><br><br>
-        <div class="photosFlex">
-            <div class="logosFlex">
-                <img src = "Images/logo1.png" width="100" height="100">
-                <img src = "Images/logo2.png" width="100" height="100">
-                <img src = "Images/logo3.png" width="100" height="100">
-            </div>
-            <li class="listStyleNone textFlex">Сайт разработан OL, Copyright @ 2026</li>
-        </div>
-    </footer>
+    <?php
+    require('footerTemplate.html');
+    ?>
 </body>
 </html>
